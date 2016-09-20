@@ -1,0 +1,72 @@
+<!--Screen 1 : Welcome page-->
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<title>Welcome E-Corp. Bug Tracker</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="header">
+		<h1>
+			Team-C Corporation <br />
+			<span class="sub">Defect Tracking System</span>
+		</h1>
+		<img src="./images/logo1.jpg" alt="Team C Logo" />
+	</div>
+
+	</br>
+	<section class="instructions">
+		<p>
+			Welcome to the Defect Tracking System. <br /> To enter a new defect,
+			please use the button below to access the Defect Creation page.<br />
+			You may obtain a list of open defects by selecting the project from
+			the drop down menu, or<br /> select "all Open Defects"" to obtain the
+			full list. Note: projects that have been closed cannot<br /> accessed
+			by this system. Please see the System Administrator for archived
+			files.
+		</p>
+	</section>
+	<br />
+	<a href="createDefects.html"> <input type="submit"
+		value="+ Create Defect">
+	</a>
+	<br></br>
+	<!--Search for Open Defects based on selected Project-->
+	<form action="OpenDefects" method="post">
+		<select name="choice">
+			<option value="all" selected>All Open Defects</option>
+			<option value="ProjectA">Project A</option>
+			<option value="ProjectB">Project B</option>
+			<option value="ProjectC">Project C</option>
+		</select> <input type="submit" value="submit">
+	</form>
+	<br></br>
+
+	<!--Start Table : Need to query info from database. These are sample data only-->
+
+	<table>
+		<thead>
+		<caption>List of Open Defects</caption>
+		<tr>
+			<th class="Def">Defect Name</th>
+			<th class="Pro">Project</th>
+			<th class ="Sum">Summary</th>
+			<th class="Assign">Assignee</th>
+		</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+
+	</table>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+DROP TABLE defects0;
+
+CREATE TABLE defects0 (application VARCHAR(30), defectName INT, summary VARCHAR(50), status VARCHAR(10), priority VARCHAR(6), assignee VARCHAR(100), description VARCHAR(150));
+    
+INSERT INTO defects0 VALUES ("ProjectA", 1000, "User cart is frozen", "open", "high", "felipe@erv.com.ca", "It is not possible to add any items in cart");
+INSERT INTO defects0 VALUES ("ProjectA", 1001, "Logging does not work", "open", "medium", "john@tts.com", "Log functionality is faulty");
+INSERT INTO defects0 VALUES ("ProjectB", 1005, "Not possible to deploy", "open", "high", "samuel@ggw.com", "after following install guide I cannot deploy app");
+INSERT INTO defects0 VALUES ("ProjectC", 1006, "This is a fault in backend", "open", "low", "larry@legacy.com", "The backend functionality is not meeting some requirements");
+INSERT INTO defects0 VALUES ("ProjectC", 1007, "Crash in submit function", "open", "medium", "larry@legacy.com", "If condition A + B + C are met the applciation crashes");
+INSERT INTO defects0 VALUES ("ProjectC", 1009, "Cannot find executable", "closed", "high", "larry@legacy.com", "The executable binary is missing from deployment");
+
+ 
+DROP TABLE applications0;
+
+CREATE TABLE applications0 (application VARCHAR(30), status VARCHAR(10));
+
+INSERT INTO applications0 VALUES ("ProjectA", "open");
+INSERT INTO applications0 VALUES ("ProjectB", "open");
+INSERT INTO applications0 VALUES ("ProjectC", "closed");

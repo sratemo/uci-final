@@ -1,0 +1,75 @@
+<!--Screen 2 : Create the defects-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bug Tracking System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="header"> 
+		<h1>
+			Team-C Corporation <br />
+			<span class="sub">Defect Tracking System</span>
+		</h1>
+		<img src="./images/logo1.jpg" alt="Team C Logo" />
+</div>
+<br></br>
+
+<h2>Ticket Submission Form</h2>
+
+<br></br>
+<a href = "index.html">
+    <input type = "submit" value ="Go Back to Home Page.">
+</a>
+<br></br>
+<!--Need to change the application names accordingly-->
+<form action="CreateDefect" method="post">
+    <div class = "form-element">
+        <label>Application <span style="color:red">* </span>: </label>
+        <select class = "input-element" name ="application" required >
+            <option>ProjectA</option>
+            <option>ProjectB</option>
+            <option disabled>ProjectC</option>
+        </select>
+    </div>
+    <br></br>
+    <!--The defect name is in the form of an integer and is created after the user clicks submit-->
+    <div class = "form-element">
+        <label>Summary <span style="color:red">* </span>: </label>
+        <input class = "input-element" type="text" name ="summary" required>
+    </div>
+    <br></br>
+    <div class = "form-element">
+        <label>Priority <span style="color:red">* </span>: </label>
+        <select class = "input-element" name ="priority" required>
+            <option>low </option>
+            <option>medium </option>
+            <option>high </option>
+        </select>
+    </div>
+    <br></br>
+    <div class = "form-element">
+        <label>Assignee <span style="color:red">* </span>: </label>
+        <select class = "input-element" name ="assignee" required>
+            <option>johncrisantotest@gmail.com</option>
+            <option>sratemo@gmail.com</option>
+			<option>vansant.larry.hb@gmail.com</option>
+			<option>edbfaos@linux-sy5m</option>
+
+        </select>
+    </div>
+    <br></br>
+    <div class = "form-element">
+        <label>Description: </label>
+        <br></br>
+        <textarea rows="4" col="50" name="description"></textarea>
+    </div>
+    <br></br>
+
+        <input type="submit" value="Submit.">
+
+</form>
+
+</body>
+</html>
