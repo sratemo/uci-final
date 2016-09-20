@@ -1,1 +1,3 @@
-# team-c-summer-2016
+# UCI Java programming II Final. 
+
+Installation guide: 
